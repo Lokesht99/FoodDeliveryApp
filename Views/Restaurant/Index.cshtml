@@ -1,0 +1,348 @@
+﻿@model IEnumerable<FoodDeliveryBusiness.DTO.RestaurantDto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Age)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaritalStatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Occupation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MonthlyIncome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EducationalQualifications)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FamilySize)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.latitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.longitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PinCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MediumP1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MediumP2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MealP1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MealP2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerferenceP1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PerferenceP2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EaseAndConvenient)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TimeSaving)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoreRestaurantChoices)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EasyPaymentOption)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoreOffersAndDiscount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoodFoodQuality)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoodTrackingSystem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SelfCooking)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HealthConcern)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LateDelivery)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PoorHygiene)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BadPastExperience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unavailability)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Unaffordable)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LongDeliveryTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DelayOfDeliveryPersonGettingAssigned)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DelayOfDeliveryPersonPickingUpFood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WrongOrderDelivered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MissingItem)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderPlacedByMistake)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InfluenceOfTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaximumWaitTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ResidenceInBusyLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoogleMapsAccuracy)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoodRoadCondition)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LowQuantityLowTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliveryPersonAbility)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InfluenceOfRating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LessDeliveryTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HighQualityOfPackage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NumberOfCalls)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Politeness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Freshness)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Temperature)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoodTaste)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GoodQuantity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Output)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Reviews)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Age)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaritalStatus)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Occupation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MonthlyIncome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EducationalQualifications)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FamilySize)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.latitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.longitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PinCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MediumP1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MediumP2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MealP1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MealP2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerferenceP1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PerferenceP2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EaseAndConvenient)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TimeSaving)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoreRestaurantChoices)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EasyPaymentOption)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoreOffersAndDiscount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoodFoodQuality)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoodTrackingSystem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SelfCooking)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HealthConcern)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LateDelivery)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PoorHygiene)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BadPastExperience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unavailability)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Unaffordable)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LongDeliveryTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DelayOfDeliveryPersonGettingAssigned)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DelayOfDeliveryPersonPickingUpFood)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WrongOrderDelivered)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MissingItem)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderPlacedByMistake)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InfluenceOfTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OrderTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaximumWaitTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ResidenceInBusyLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoogleMapsAccuracy)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoodRoadCondition)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LowQuantityLowTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeliveryPersonAbility)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InfluenceOfRating)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LessDeliveryTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HighQualityOfPackage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NumberOfCalls)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Politeness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Freshness)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Temperature)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoodTaste)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GoodQuantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Output)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Reviews)
+        </td>
+    </tr>
+}
+
+</table>
